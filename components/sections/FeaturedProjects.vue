@@ -20,7 +20,7 @@
           <h3 class="text-lg font-semibold mb-2 group-hover:text-highlight transition-colors">
             {{ project.title }}
           </h3>
-          <p class="text-sm text-font/70 flex-grow mb-4">
+          <p class="text-sm text-font-muted flex-grow mb-4">
             {{ project.description }}
           </p>
           <div class="flex flex-wrap gap-2 mb-4">

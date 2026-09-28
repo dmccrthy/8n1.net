@@ -39,7 +39,7 @@
       </button>
     </div>
 
-    <p class="text-sm text-font/60">
+    <p class="text-sm text-font-muted">
       {{ filtered.length }} result{{ filtered.length === 1 ? "" : "s" }}
     </p>
   </div>

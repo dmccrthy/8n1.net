@@ -6,7 +6,7 @@
       v-if="post.image"
       :src="post.image"
       :alt="post.title"
-      class="w-full h-48 object-cover shrink-0"
+      class="w-full h-40 object-cover shrink-0"
     />
 
     <div class="p-5 flex flex-col flex-1">
@@ -26,7 +26,7 @@
         </NuxtLink>
       </h3>
 
-      <p class="text-sm text-font/70 flex-1">
+      <p class="text-sm text-font-muted flex-1">
         {{ post.description }}
       </p>
 

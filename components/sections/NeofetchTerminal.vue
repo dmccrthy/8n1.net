@@ -37,7 +37,7 @@
               autocapitalize="off"
               spellcheck="false"
               placeholder="type 'help'"
-              class="flex-1 min-w-0 bg-transparent outline-none text-font placeholder:text-font/40 caret-highlight"
+              class="flex-1 min-w-0 bg-transparent outline-none text-font placeholder:text-font-muted caret-highlight"
               @keydown.enter="submit"
               @keydown.up.prevent="historyUp"
               @keydown.down.prevent="historyDown"

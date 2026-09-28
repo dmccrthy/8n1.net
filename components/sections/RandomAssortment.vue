@@ -1,7 +1,7 @@
 <template>
-  <section class="py-10">
-    <p class="text-sm text-font/60">
-      A random sample from the archives — refresh to shuffle.
+  <section>
+    <p class="text-sm text-font-muted">
+      Checkout some of the stuff I've worked on.
     </p>
 
     <div class="flex items-end justify-between mt-8">
@@ -29,7 +29,7 @@
           <h3 class="text-lg font-semibold mb-2 group-hover:text-highlight transition-colors">
             {{ project.title }}
           </h3>
-          <p class="text-sm text-font/70 flex-grow mb-4">
+          <p class="text-sm text-font-muted flex-grow mb-4">
             {{ project.description }}
           </p>
           <div class="flex flex-wrap gap-2">

@@ -11,11 +11,11 @@
     </tr>
 </table>
 
-## ⚙️ About
+## About
 
 This is the source code for my website [8n1.net](https://8n1.net).
 
-## 🏁 Getting Started
+## Getting Started
 
 1.  **Clone the Repo**
 
@@ -52,15 +52,13 @@ This is the source code for my website [8n1.net](https://8n1.net).
 
     This should create a ./dist folder with the complete static site. Unlike webpack, this will include the html for all pages.
 
-## 🧰 Tools Used
+## Tools Used
 
 - [Vue.js](https://vuejs.org/)
 - [Nuxt](https://nuxt.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-#### Credit to <a href="https://github.com/twitter/twemoji">Twemoji</a> for the favicon lol.
-
-## 🗒️ License
+## License
 
 This Website is provided under the AGPL-3.0 license. Feel free to use it as inspiration for your own website.
 

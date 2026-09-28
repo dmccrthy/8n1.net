@@ -12,10 +12,10 @@
       @clear-filters="clearFilters"
     />
 
-    <div v-if="filtered.length" class="flex flex-col space-y-6">
+    <div v-if="filtered.length" class="grid gap-6 sm:grid-cols-2">
       <PostCard v-for="post in filtered" :key="post.id" :post="post" />
     </div>
-    <p v-else class="text-center text-font/60 py-12">No posts found.</p>
+    <p v-else class="text-center text-font-muted py-12">No posts found.</p>
   </main>
 </template>
 

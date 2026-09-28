@@ -12,7 +12,7 @@
       @clear-filters="clearFilters"
     />
 
-    <div v-if="filtered.length" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div v-if="filtered.length" class="grid gap-6 sm:grid-cols-2">
       <a
         v-for="project in filtered"
         :key="project.id"
@@ -31,7 +31,7 @@
           <h3 class="text-lg font-semibold mb-2 group-hover:text-highlight transition-colors">
             {{ project.title }}
           </h3>
-          <p class="text-sm text-font/70 flex-grow mb-4">
+          <p class="text-sm text-font-muted flex-grow mb-4">
             {{ project.description }}
           </p>
           <div class="flex flex-wrap gap-2">
@@ -46,7 +46,7 @@
         </div>
       </a>
     </div>
-    <p v-else class="text-center text-font/60 py-12">No projects found.</p>
+    <p v-else class="text-center text-font-muted py-12">No projects found.</p>
   </main>
 </template>
 

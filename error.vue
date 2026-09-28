@@ -8,7 +8,7 @@
       <p class="text-xl mb-8">
         {{ error.statusCode === 404 ? "Page not found." : "Something went wrong." }}
       </p>
-      <p v-if="error.statusCode !== 404" class="text-font/70 mb-8 max-w-md">
+      <p v-if="error.statusCode !== 404" class="text-font-muted mb-8 max-w-md">
         {{ error.message }}
       </p>
       <NuxtLink

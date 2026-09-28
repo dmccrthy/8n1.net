@@ -1,6 +1,6 @@
 <template>
   <main>
-    <NeofetchTerminal />
+    <!-- <NeofetchTerminal /> -->
     <RandomAssortment />
   </main>
 </template>
