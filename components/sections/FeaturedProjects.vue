@@ -1,14 +1,12 @@
 <template>
   <section v-if="sortedProjects.length" class="py-10">
     <h2>featured projects</h2>
-    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <a
+    <div class="mt-8 grid gap-6 sm:grid-cols-2">
+      <NuxtLink
         v-for="project in sortedProjects"
         :key="project.id"
-        :href="project.link || '#'"
-        :target="project.link ? '_blank' : undefined"
-        :rel="project.link ? 'noopener noreferrer' : undefined"
-        class="rounded-lg border border-alt hover:border-highlight/50 transition-colors flex flex-col overflow-hidden group bg-main"
+        :to="`/projects/${project.slug}`"
+        class="rounded-lg border border-alt hover:border-highlight/50 transition-colors flex flex-col overflow-hidden group bg-main no-underline"
       >
         <NuxtImg
           v-if="project.image"
@@ -36,7 +34,7 @@
             View project →
           </span>
         </div>
-      </a>
+      </NuxtLink>
     </div>
   </section>
 </template>
@@ -50,6 +48,6 @@ const sortedProjects = computed(() =>
   [...toValue(projects)]
     .slice()
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 3),
+    .slice(0, 2),
 );
 </script>

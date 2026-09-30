@@ -13,13 +13,11 @@
     />
 
     <div v-if="filtered.length" class="grid gap-6 sm:grid-cols-2">
-      <a
+      <NuxtLink
         v-for="project in filtered"
         :key="project.id"
-        :href="project.link || '#'"
-        :target="project.link ? '_blank' : undefined"
-        :rel="project.link ? 'noopener noreferrer' : undefined"
-        class="rounded-lg border border-alt hover:border-highlight/50 transition-colors flex flex-col overflow-hidden group bg-main"
+        :to="`/projects/${project.slug}`"
+        class="rounded-lg border border-alt hover:border-highlight/50 transition-colors flex flex-col overflow-hidden group bg-main no-underline"
       >
         <NuxtImg
           v-if="project.image"
@@ -44,7 +42,7 @@
             </span>
           </div>
         </div>
-      </a>
+      </NuxtLink>
     </div>
     <p v-else class="text-center text-font-muted py-12">No projects found.</p>
   </main>
