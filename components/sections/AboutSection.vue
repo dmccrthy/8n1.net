@@ -9,11 +9,23 @@
         University of New Hampshire. If you want to get in touch, my links are below.
       </p>
     </div>
-    <NuxtImg
-      src="/images/headshot.jpg"
-      width="400"
-      alt="Picture of Dan McCarthy"
-      class="size-60 rounded-full p-1 border-4 border-highlight mx-auto drop-shadow-2xl"
-    />
+    <figure class="group relative mx-auto rotate-2">
+      <div
+        aria-hidden="true"
+        class="absolute inset-0 translate-x-3 translate-y-3 bg-alt shadow-lg transition-transform duration-300 group-hover:translate-x-5 group-hover:translate-y-5"
+      />
+      <div class="relative transition-transform duration-300 group-hover:-translate-y-2">
+        <NuxtImg
+          src="/images/headshot.jpg"
+          width="400"
+          alt="Picture of Dan McCarthy"
+          class="w-60 h-72 object-cover shadow-2xl"
+        />
+        <div
+          aria-hidden="true"
+          class="absolute -top-3 left-1/2 -translate-x-1/2 -rotate-3 w-32 h-6 bg-white/60 backdrop-blur-[1px] shadow-sm"
+        />
+      </div>
+    </figure>
   </section>
 </template>

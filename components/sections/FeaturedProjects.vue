@@ -1,6 +1,11 @@
 <template>
   <section v-if="sortedProjects.length" class="py-10">
-    <h2>featured projects</h2>
+    <div class="flex items-end justify-between mb-8">
+      <h2>projects</h2>
+      <NuxtLink to="/projects" class="text-sm font-medium text-highlight hover:underline"
+        >view all</NuxtLink
+      >
+    </div>
     <div class="mt-8 grid gap-6 sm:grid-cols-2">
       <NuxtLink
         v-for="project in sortedProjects"
@@ -45,7 +50,7 @@ const { data: projects } = await useAsyncData("featured-projects", () =>
 );
 
 const sortedProjects = computed(() =>
-  [...toValue(projects)]
+  [...(toValue(projects) ?? [])]
     .slice()
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 2),

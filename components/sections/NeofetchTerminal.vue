@@ -166,7 +166,7 @@ const commands: TerminalCommand[] = [
       append("Available commands:", ...lines);
     },
   },
-  { name: "about", description: "Learn about Dan", run: () => navigate("/about") },
+  { name: "about", description: "Learn about Dan", run: () => navigate("/") },
   { name: "projects", description: "Browse projects", run: () => navigate("/projects") },
   { name: "posts", description: "Read blog posts", run: () => navigate("/posts") },
   { name: "colophon", description: "About this site's stack", run: () => navigate("/colophon") },

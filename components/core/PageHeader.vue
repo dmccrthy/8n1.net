@@ -5,7 +5,6 @@
       <!-- Desktop Nav -->
       <nav class="max-sm:hidden nav-bar">
         <NuxtLink to="/" class="hover:text-highlight transition-colors">home</NuxtLink>
-        <NuxtLink to="/about" class="hover:text-highlight transition-colors">about</NuxtLink>
         <NuxtLink to="/projects" class="hover:text-highlight transition-colors">projects</NuxtLink>
         <NuxtLink to="/posts" class="hover:text-highlight transition-colors">posts</NuxtLink>
       </nav>
@@ -25,9 +24,6 @@
     <div v-if="mobileDropdown" ref="dropdownRef" class="nav-bar-mobile">
       <NuxtLink to="/" class="hover:text-highlight transition-colors" @click="closeDropdown"
         >Home</NuxtLink
-      >
-      <NuxtLink to="/about" class="hover:text-highlight transition-colors" @click="closeDropdown"
-        >About</NuxtLink
       >
       <NuxtLink to="/projects" class="hover:text-highlight transition-colors" @click="closeDropdown"
         >Projects</NuxtLink
